@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="content/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="content/css/style.css">
+  <script href="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="content/js/service.js"></script>
+  <script src="content/js/consulta.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  </style>
+
+  <title>Frontend Challenge</title>
+</head>
+
+<body>
+  <div>
+    <div class="col-md-12 text-right pr-250">
+      <a class="a-bar" target="_blank" href="https://www.catho.com.br">Candidatos</a>
+      <span class="span-bar2">•</span>
+      <a class="a-bar" target="_blank" href="https://www.catho.com.br/empresas">Empresas</a>
+      <span class="span-bar2">•</span>
+      <span class="span-bar">Cursos</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-color">
+    <div class="col-xs-1 pl-200">
+      <img src="images/Logo-Catho-Educacao.png" width="90" class="img-fluid" />
+    </div>
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon icon-menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <div class="div-navbar">
+            <a class="nav-link item-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Bolsas de estudo
+            </a>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item sub-menu" href="#">Graduação</a>
+            <a class="dropdown-item sub-menu" href="#">Pós Graduação</a>
+            <a class="dropdown-item sub-menu" href="#">Idiomas</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="div-navbar">
+            <a class="nav-link item-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cursos
+            </a>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item sub-menu" href="#">Administração</a>
+            <a class="dropdown-item sub-menu" href="#">Direito</a>
+            <a class="dropdown-item sub-menu" href="#">Pedagogia</a>
+            <a class="dropdown-item sub-menu" href="#">Educação Física</a>
+            <a class="dropdown-item sub-menu" href="#">Enfermagem</a>
+            <a class="dropdown-item sub-menu" href="#">Ciências contábeis</a>
+            <a class="dropdown-item sub-menu" href="#">Engenharia Civil</a>
+            <a class="dropdown-item sub-menu" href="#">Fisioterapia</a>
+            <a class="dropdown-item sub-menu" href="#">Nutrição</a>
+            <a class="dropdown-item sub-menu" href="#">Psicologia</a>
+            <a class="dropdown-item sub-menu" href="#">Ver todos</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="div-navbar">
+            <a class="nav-link item-menu" href="#">Melhores Faculdades
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="div-navbar">
+            <a class="nav-link item-menu" href="#">Teste Vocacional
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="div-navbar">
+            <a class="nav-link item-menu" href="#">Ensino a Distância
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="div-navbar pl-80">
+            <a class="nav-link color-white" href="#">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i> (11) 4134-7373
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <div class="div-navbar">
+            <a class="nav-link color-white" href="#">
+              <i class="fa fa-headphones" aria-hidden="true"></i> 0800 001 58 75
+              <span class="sr-only">(current)</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row pt-15 mb-20">
+      <a class="a-breadcrumb" href="/educacao/">
+        <span>Educação&nbsp;&nbsp;</span>
+      </a>
+      <span class="span-bar2"> >&nbsp;&nbsp;</span>
+      <a class="a-breadcrumb" href="/educacao/">
+        <span> Universidade Paulista&nbsp;&nbsp;</span>
+      </a>
+      <span class="span-bar2"> >&nbsp;&nbsp;</span>
+      <a class="a-breadcrumb" href="/educacao/">
+        <span> Cursos&nbsp;&nbsp;</span>
+      </a>
+      <span class="span-bar2"> >&nbsp;&nbsp;</span>
+      <span class="span-bar"> Engenharia Mecânica</span>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+        <!-- BOX 1-->
+        <div class="col-12 rounded sombreado mb-3 bg-light">
+          <div class="div-conteudo2">
+            <div class="div-conteudo">
+              <a class="img-uni" href="#">
+                <img src="images/unip-universidade-paulista.jpeg" class="img-uni" />
+              </a>
+            </div>
+            <div class="div-conteudo">
+              <h2 class="">
+                <div class="subtitulo">
+                  <span>Bacharelado</span>
+                  <span>UNIP - Universidade Paulista</span>
+                </div>
+                <div class="titulo" id="curso"></div>
+              </h2>
+              <div class="avaliacao">
+                <span>Avaliação do curso nesse campus:</span>
+                <span class="icon-avaliacao">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <span class="icon-avaliacao">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <span class="icon-avaliacao">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <span class="icon-avaliacao">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <span class="icon-avaliacao">
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <span class="nota">4.16</span>
+              </div>
+              <div class="localizacao">
+                <span class="mb-local">Campus Indianópolis - São Paulo - SP</span>
+                <a class="campus" role="button" tabindex="0">Veja outros câmpus</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="about-course">
+            <div class="about-course2">
+              <ul class="ul-tabs">
+                <li class="sobre-curso">
+                  <a class="a-sobre" href="#">Sobre o curso</a>
+                </li>
+                <li class="sobre-curso">
+                  <a class="a-sobre" href="#">Avaliações do curso</a>
+                </li>
+              </ul>
+              <ul class="share">
+                <li class="share-li">Compartilhe:</li>
+                <li class="share-li">
+                  <a href="#"
+                    class="_1SqSmQxlh9" target="_blank">
+                    <span class="icon-share">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="share-li">
+                  <a href="#"
+                    class="_1SqSmQxlh9" target="_blank">
+                    <span class="icon-share">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="share-li">
+                  <a href="#"
+                    class="_1SqSmQxlh9" target="_blank">
+                    <span class="icon-share">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOX 2-->
+
+        <div class="col-12 rounded mb-3 pb-15 sombreado bg-light">
+          <div class="pt-2">
+            <div class="item-mac">
+              <p>
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> CURSO AUTORIZADO PELO MAC</p>
+            </div>
+            <div>
+              <p class="texto-mac">
+                Todos os cursos de graduação e pós-graduação com bolsas de estudo oferecidas pela Catho Educacação são autorizados pelo MEC.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOX 3-->
+
+        <div class="col-12 rounded mb-3 pb-15 sombreado bg-light">
+          <div class="pt-2">
+            <p class="texto-mac">
+              Com duração de cinco anos, o
+              <b>curso de Engenharia Mecânica na Universidade Paulista - Unip</b> apresenta um enfoque generalista, entretanto
+              o futuro engenheiro Mecânico desenvolve habilidades para trabalhar com desenvolvimento e projeção de motores,
+              veículos, máquinas e sistemas termodinâmicos para o setor industrial.
+            </p>
+            <p class="texto-mac">
+              Se você tem interesse em seguir nessa área, saiba que o curso de Engenharia Mecânica da Unip requer muita afinidade com as
+              ciências exatas e concentração nas aulas em laboratório! Além disso, o estudante precisa ter boa relação interpessoal,
+              gostar de tecnologia e ter raciocínio lógico para aplicar na prática as ideias que surgem.
+            </p>
+            <div class="tgl">
+              <p class="texto-mac">
+                Essas são algumas das habilidades primordiais para o futuro Engenheiro Mecânico conseguir criar e implementar as melhores
+                soluções.
+              </p>
+              <p class="texto-mac">
+                <b>Como é a carreira de Engenharia Mecânica</b>
+                <br /> A Engenharia Mecânica é considerada uma das mais antigas áreas da engenharia, pois a criação de ferramentas
+                para facilitar o cotidiano das pessoas é algo que existe há milhares de anos.
+              </p>
+              <p class="texto-mac">
+                O engenheiro Mecânico pode atuar em empresas siderúrgicas e automobilísticas criando novos projetos. É possível ainda trabalhar
+                com pesquisa de novas tecnologias, realizar o controle de qualidade de equipamentos e construir máquinas
+                e motores.
+              </p>
+              <p class="texto-mac">
+                <b>Qual o valor de uma faculdade de Engenharia Mecânica na Unip?</b>
+                <br /> O curso de Engenharia Mecânica na Unip possui valores que variam de acordo com o polo e o período das aulas.
+                Se você quiser pagar menos no curso, a Catho Educação possui bolsas de estudo que garantem desconto até o
+                fim da faculdade.
+              </p>
+              <p class="texto-mac">
+                <b>Habilidades adquiridas no curso de Engenharia Mecânica</b>
+                <br /> Ao optar pelo curso de Engenharia Mecânica da Unip, o aluno desenvolve habilidades como definição de instrumentos
+                para monitorar processos térmicos e hidráulicos, elaboração de catálogos técnicos, desenvolvimento de sistemas
+                de refrigeração, realiza testes de resistência, bem como manutenção das máquinas.
+              </p>
+              <p class="texto-mac">
+                Além disso, os estudantes de Engenharia Mecânica saem da universidade aptos para aplicarem seus conhecimentos em projetos
+                de novas usinas ou indústrias, bem como ser consultor especializado.
+              </p>
+              <p class="texto-mac">
+                <b>Como é o mercado de trabalho para quem é formado em Engenharia Mecânica</b>
+                <br /> O bacharel em Engenharia Mecânica pode atuar em diversas atividades, seja em indústrias petroquímicas ou
+                automobilísticas, no setor financeiro realizando análises e em centros de pesquisa desenvolvendo novas tecnologias.
+              </p>
+              <p class="texto-mac">
+                Se o engenheiro Mecânico quiser trilhar um caminho no setor público, é possível encontrar oportunidades nas três esferas
+                do governo, atuando com condução de obras de desenvolvimento ou fiscalização.
+              </p>
+              <p class="texto-mac">
+                Para exercer a profissão, o recém-formado precisa ter o diploma reconhecido pelo MEC e obter o registro profissional no Conselho
+                Regional de Engenharia e Agronomia (CREA) do Estado onde atua.
+              </p>
+              <p class="texto-mac">
+                <b>Sobre a Unip</b>
+                <br /> A Unip - Universidade Paulista está no mercado há mais de 30 anos e é reconhecida como um importante centro
+                de produção de conhecimento por meio de suas atividades de ensino, pesquisa, extensão e pós-graduação.
+              </p>
+              <p class="texto-mac">
+                A universidade promove a formação e capacitação de alunos por meio de um ensino de qualidade, tecnologicamente avançado e
+                dirigido para o futuro.
+              </p>
+              <p class="texto-mac">
+                Seu principal objetivo é promover o desenvolvimento do potencial dos alunos, proporcionando condições que permitam a entrada
+                no mercado de trabalho e a solução criativa de problemas que a comunidade propõe.
+              </p>
+            </div>
+            <div style="text-align: center">
+              <a class="ver-mais" href="#" id="exibirMais">Veja mais sobre o curso</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOX PAGAMENTO-->
+
+      <div class="col-md-4 ">
+        <div class="payment box-flutuante">
+          <div class="payment-box">
+            <div class="payment-box-details" id="offerBoxScholarship">
+              <div class="payment-box-details">
+                <header class="payment-header">
+                  <span>Veja as bolsas disponíveis no momento</span>
+                </header>
+                <div class="payment-details2">
+                  <form class="payment-conteudo">
+                    <div class="Ge-BgkllGK">
+                      <div class="_2bH4q39jVV">
+                        <select id="selectPrices" class="form-control mb-10"></select>
+                      </div>
+                      <div>
+                        <div class="payment-price">
+                          <div class="payment-desconto" data-cy="offerBox-discountPercentage">
+                            <span class="span-desconto">Bolsa de</span>
+                            <span class="span-desconto2" id="desconto"></span>
+                          </div>
+                          <div class="span-valor">
+                            <div class="span-valor2">
+                              <span class="span-valor-detalhado">Valor da mensalidade</span>
+                              <span class="span-valor-detalhado2" style="text-decoration: line-through;">De
+                                <span>R$ 1.953,07</span>
+                              </span>
+                              <span class="span-valor-detalhado3" id="valorDesconto"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-payment">
+                        <a href="#" rel="noopener nofollow" id="btn-comprar">
+                          <span class="span-desconto btn">COMPRAR DESCONTO</span>
+                        </a>
+
+                      </div>
+                      <div class="estoque">
+                        <div class="estoque2">
+                        </div>
+                        <div class="span-estoque" id="estoque">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;
+                          <span id="alerta-estoque">Restam apenas 3 bolsas</span>
+                        </div>
+                      </div>
+                  </form>
+                  <div class="beneficios">
+                    <span class="span-desconto">Benefícios:</span>
+                    <ul>
+                      <li>
+                        <div class="span-beneficios">
+                          <span class="text-icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        <p>Isenção da Taxa de Matrícula</p>
+                      </li>
+                      <li>
+                        <div class="span-beneficios">
+                          <span class="text-icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        <p>Isenção da Taxa de Vestibular</p>
+                      </li>
+                      <li>
+                        <div class="span-beneficios">
+                          <span class="text-icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        <p>Assinatura da Catho grátis até o fim do curso</p>
+                      </li>
+                    </ul>
+                    <div class="benef-details">
+                      <a role="button" tabindex="0">
+                        <span>Veja mais 1 benefício</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <button class="regulamento">
+                    <span>
+                      <p>Para acessar o regulamento,
+                        <strong>clique aqui</strong>
+                      </p>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution pt-45">
+        Challenge by
+        <a href="https://www.catho.com.br/educacao/" target="_blank">Catho Educação</a>. Coded by
+        <a href="#">Nicole Florence Santos Gonçalves</a>.
+        <a href="https://www.linkedin.com/in/nicole-florence-santos-gon%C3%A7alves-3ba48656/">
+          <span class="icon-share">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </span>
+        </a>.
+      </p>
+    </footer>
+
+    <script src="content/js/bootstrap.min.js"></script>
+</body>
+
+</html>
